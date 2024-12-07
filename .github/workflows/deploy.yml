@@ -11,7 +11,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: production  # Referencia al entorno configurado en GitHub
+    environment: production  
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
