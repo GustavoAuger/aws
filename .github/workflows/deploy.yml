@@ -25,7 +25,7 @@ jobs:
 
       - name: Sync files to S3
         run: |
-          aws s3 sync ./ s3://desafio1aws/
+          aws s3 sync ./ s3://desafio1aws/ --exclude ".git/*" --exclude ".github/*" --exclude "*.yml"
 
       - name: Invalidate CloudFront cache
         run: |
